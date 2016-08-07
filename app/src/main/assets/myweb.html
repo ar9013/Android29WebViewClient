@@ -1,0 +1,24 @@
+<script>
+
+    function showData(){
+    var data = document.getElementById('data');
+    document.getElementById('showhere').innerHTML = data.value;
+
+    window.Brad.alert(data.value);
+    }
+
+    function fromAndroid(mesg){
+
+        document.getElementById("showhere").innerHTML = mesg;
+    }
+
+</script>
+
+<h1>Brad Big Company</h1>
+<hr/>
+<input type="text" id="data"/>
+<input type="button" onclick="showData()" value="Click"/>
+
+<hr/>
+
+<div id="showhere"></div>
